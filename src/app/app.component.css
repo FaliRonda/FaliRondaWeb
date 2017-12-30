@@ -1,0 +1,29 @@
+/* AppComponent's private CSS styles */
+
+nav {
+  background: #ffffff!important;
+  box-shadow: 0 -5px 20px #5d5869;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+nav a {
+  color: rgb(63, 63, 63)!important;
+}
+
+nav .content {
+  display: flex;
+  margin: auto;
+  width: 50vw;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.nav-link {
+  display: inline-block;
+}
+/*5d5869*/

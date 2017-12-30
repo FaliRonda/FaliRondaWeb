@@ -1,0 +1,54 @@
+<div class="introduction vertical-align-parent">
+  <div class="content vertical-align-child">
+    <h1>¡Hola!</h1>
+    <p class="no-margin">Soy Fali, un Desarrollador de Videojuegos de Málaga.</p>
+    <p class="no-margin">Me dedico a crear videojuegos por pasión, es parte</p>
+    <p class="no-margin">de mi forma de ser.</p>
+  </div>
+</div>
+
+<br/><br/><br/>
+<div class="projects" id="projects">
+  <h3>PROYECTOS</h3>
+  <br/>
+  <div class="content">
+    <a *ngFor="let project of projects; let i = index" routerLink="/detail/{{project.id}}" class="project">
+      <img src="{{project.imgUrl}}">
+      <h4>{{project.name}}</h4>
+    </a>
+  </div>
+</div>
+
+<br/><br/><br/>
+<div class="about" id="about">
+  <div class="content">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="assets/images/photo.png">
+      </div>
+      <div class="col-md-8">
+        <h5>¡ME ALEGRA VERTE POR AQUÍ!</h5>
+        <p>Soy un Programador de Videojuegos de Málaga con pasión por crear experiencias de 
+          dejen huella a los jugadores, tal y como me han dejado huella a mi. Hago foco en la 
+          producción y diseño de proyectos.
+        </p>
+        <p>Soy un Programador de Videojuegos de Málaga con pasión por crear experiencias de 
+            dejen huella a los jugadores, tal y como me han dejado huella a mi. Hago foco en la 
+            producción y diseño de proyectos.
+          </p>
+          <p>Soy un Programador de Videojuegos de Málaga con pasión por crear experiencias de 
+              dejen huella a los jugadores, tal y como me han dejado huella a mi. Hago foco en la 
+              producción y diseño de proyectos.
+            </p>
+            <p>Soy un Programador de Videojuegos de Málaga con pasión por crear experiencias de 
+                dejen huella a los jugadores, tal y como me han dejado huella a mi. Hago foco en la 
+                producción y diseño de proyectos.
+              </p>
+              <p>Soy un Programador de Videojuegos de Málaga con pasión por crear experiencias de 
+                  dejen huella a los jugadores, tal y como me han dejado huella a mi. Hago foco en la 
+                  producción y diseño de proyectos.
+                </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<br/>
+<div *ngIf="project" class="project">
+  <h3>{{ project.name | uppercase }}</h3>
+  <h6>{{ project.jobs | uppercase }}</h6>
+  <h6>{{ project.information | uppercase }}</h6>
+  <br/>
+  <h5>RESUMEN</h5>
+  <p>{{ project.description }}</p>
+  <br/>
+  <h5>JUEGO</h5>
+  <iframe [src]="getGameUrl()" name="Bucketneers" scrolling="no" frameborder="1"></iframe>
+  <br/>
+  <h5>CÓDIGO</h5>
+  <a href='#'>{{ project.codeLink }}</a>
+  <br/>
+  <br/>
+</div>

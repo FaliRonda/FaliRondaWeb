@@ -1,0 +1,13 @@
+/* ProjectDetailComponent's private CSS styles */
+.project {
+  margin: 0 auto;
+  width: 50vw;
+}
+
+iframe {
+  border:0px #000000 none;
+  display: block;
+  margin: 0 auto;
+  height: 560px;
+  width: 100%;
+}
