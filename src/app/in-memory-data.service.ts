@@ -103,7 +103,7 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 7,
         name: 'Master of Tappers',
         imgUrl: imgBaseUrl + 'mot/main.png',
-        gameUrl: gameBaseUrl + '',
+        gameUrl: gameBaseUrl + 'mot/index.html',
         jobs: 'Productos, Programador',
         information: 'Proyecto de Littlequest, primavera 2017',
         description: 'Después de tomar la determinación de montar un grupo de desarrollo y comenzar un proyecto, ' +
