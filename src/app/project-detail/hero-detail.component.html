@@ -5,13 +5,22 @@
   <h6>{{ project.information | uppercase }}</h6>
   <br/>
   <h5>RESUMEN</h5>
-  <p>{{ project.description }}</p>
-  <br/>
-  <h5>JUEGO</h5>
-  <iframe [src]="getGameUrl()" name="Bucketneers" scrolling="no" frameborder="1"></iframe>
-  <br/>
-  <h5>CÓDIGO</h5>
-  <a href='#'>{{ project.codeLink }}</a>
+  <p>{{ project.description }}<a [hidden]="!project.resourcesLink" target="_blank" href='{{ project.resourcesLink }}'>{{ project.resourcesText }}</a></p>
+  <div [hidden]="!project.images">
+      <br/>
+      <h5>IMÁGENES</h5>
+      <img *ngFor="let image of project.images;" src="{{ image }}">
+    </div>
+  <div [hidden]="!project.gameUrl">
+    <br/>
+    <h5>JUEGO</h5>
+    <iframe [src]="getGameUrl()" name="{{ project.name }}" scrolling="no" frameborder="1"></iframe>
+  </div>
+  <div [hidden]="!project.codeLink">
+    <br/>
+    <h5>CÓDIGO</h5>
+    <a target="_blank" href='{{ project.codeLink }}'>{{ project.codeLink }}</a>
+  </div>
   <br/>
   <br/>
 </div>

@@ -11,3 +11,8 @@ iframe {
   height: 560px;
   width: 100%;
 }
+
+img {
+  margin-bottom: 20px;
+  width: 50vw;
+}
