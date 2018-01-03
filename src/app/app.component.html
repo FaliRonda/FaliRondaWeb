@@ -3,8 +3,8 @@
     <a class="navbar-brand" href="#">FALI RONDA</a>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" onclick="$('html,body').animate({scrollTop: $('#projects').offset().top});">PROYECTOS</a>
-        <a class="nav-link" onclick="$('html,body').animate({scrollTop: $('#about').offset().top});">SOBRE MI</a>
+        <a class="nav-link" (click)="go('projects')">PROYECTOS</a>
+        <a class="nav-link" (click)="go('about')">SOBRE MI</a>
       </li>
     </ul>
   </div>

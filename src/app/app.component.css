@@ -19,11 +19,22 @@ nav .content {
   width: 50vw;
 }
 
+@media (max-width: 600px) {
+  nav .content {
+    width: 80vw;
+  }
+}
+
 .nav-link:hover {
   cursor: pointer;
 }
 
 .nav-link {
+  margin-right: 10px;
   display: inline-block;
+}
+
+.nav-link:last-child {
+  margin-right: 0;
 }
 /*5d5869*/

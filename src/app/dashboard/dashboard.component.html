@@ -12,10 +12,14 @@
   <h3>PROYECTOS</h3>
   <br/>
   <div class="content">
-    <a *ngFor="let project of projects; let i = index" routerLink="/detail/{{project.id}}" class="project">
-      <img src="{{project.imgUrl}}">
-      <h4>{{project.name}}</h4>
-    </a>
+    <div class="row" *ngFor="let projects of projectRows">
+        <div *ngFor="let project of projects; let i = index" class="col-md-4">
+          <a routerLink="/detail/{{project.id}}" class="project">
+            <img src="{{project.imgUrl}}">
+            <p>{{project.name}}</p>
+          </a>
+        </div>
+    </div>
   </div>
 </div>
 

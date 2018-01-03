@@ -42,4 +42,5 @@ import { ProjectService }          from './project.service';
   providers: [ ProjectService ], //, MessageService ],
   bootstrap: [ AppComponent ]
 })
+
 export class AppModule { }

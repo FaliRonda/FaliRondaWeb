@@ -8,7 +8,7 @@ import { ProjectService } from '../project.service';
   styleUrls: [ './dashboard.component.css' ]
 })
 export class DashboardComponent implements OnInit {
-  projects: Project[] = [];
+  projectRows = [];
 
   constructor(private projectService: ProjectService) { }
 
@@ -17,7 +17,21 @@ export class DashboardComponent implements OnInit {
   }
 
   getProjects(): void {
+    const that = this;
     this.projectService.getProjects()
-      .subscribe(projects => this.projects = projects);
+      .subscribe(projects => {
+        let count = 0;
+        let rowNumber = 0;
+        this.projectRows[rowNumber] = [];
+        projects.forEach(project => {
+          this.projectRows[rowNumber] = this.projectRows[rowNumber].concat(project);
+          count +=1;
+          
+          if (count != 0 && count % 3 == 0) {
+            rowNumber += 1;
+            this.projectRows[rowNumber] = [];
+          }
+        });
+      });
   }
 }

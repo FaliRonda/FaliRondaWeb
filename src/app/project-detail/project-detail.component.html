@@ -6,6 +6,7 @@
   <br/>
   <h5>RESUMEN</h5>
   <p>{{ project.description }}<a [hidden]="!project.resourcesLink" target="_blank" href='{{ project.resourcesLink }}'>{{ project.resourcesText }}</a></p>
+  <p [hidden]="!project.extraInfo">{{ project.extraInfo }}</p>
   <div [hidden]="!project.images">
       <br/>
       <h5>IMÁGENES</h5>

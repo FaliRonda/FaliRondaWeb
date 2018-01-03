@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Tour of Heroes';
+  go(id): void {
+    if (window.location.href.indexOf("detail") === -1)
+      $('html,body').animate({scrollTop: $('#'+id).offset().top});
+    else
+      window.location.href = "/dashboard#"+id;
+  }
 }

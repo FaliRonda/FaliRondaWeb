@@ -19,7 +19,7 @@ export class InMemoryDataService implements InMemoryDbService {
           'en el Polo de Contenidos Digitales de Málaga para poder trabajar todo el fin de semana en el juego. Me ' +
           'dediqué sobretodo a la programación, aunque como siempre procuré mantener el control en cuanto al estado ' +
           'del desarrollo, dirigir el flujo de trabajo y dar mis pinceladas de diseño.',
-        codeLink: 'https://github.com/RafaelRonda/Bucketneers'
+        codeLink: 'https://github.com/RafaelRonda/Bucketneers',
       },
       {
         id: 2,

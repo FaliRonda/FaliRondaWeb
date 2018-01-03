@@ -4,6 +4,12 @@
   width: 50vw;
 }
 
+@media (max-width: 600px) {
+  .project {
+    width: 80vw;
+  }
+}
+
 iframe {
   border:0px #000000 none;
   display: block;
@@ -15,4 +21,10 @@ iframe {
 img {
   margin-bottom: 20px;
   width: 50vw;
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 80vw;
+  }
 }
