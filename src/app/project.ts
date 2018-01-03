@@ -9,4 +9,5 @@ export class Project {
   information: string;
   description: string;
   codeLink: string;
+  extraInfo: string;
 }
