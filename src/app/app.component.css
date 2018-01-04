@@ -25,6 +25,16 @@ nav .content {
   }
 }
 
+@media (max-width: 400px) {
+  nav .content {
+    font-size: 12px;
+  }
+
+  nav .content .navbar-brand {
+    font-size: 16px;
+  }
+}
+
 .nav-link:hover {
   cursor: pointer;
 }
