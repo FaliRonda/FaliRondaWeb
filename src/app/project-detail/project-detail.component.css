@@ -32,3 +32,7 @@ img {
 .project a {
   word-wrap: break-word!important;
 }
+
+p {
+  text-align: justify;
+}
