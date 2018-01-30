@@ -128,6 +128,11 @@ a {
   font-size: 11px;
 }
 
+.projects {
+  margin: auto;
+  width: 75vw;
+}
+
 .project {
   background-position: 50% 50%;
   background-size: cover;
@@ -137,7 +142,7 @@ a {
   box-shadow: 0 0 20px #aaa0c0;
   color: rgb(63, 63, 63);
   display: inline-block;
-  height: 35vw;
+  height: 20vw;
   padding: 0;
   text-align: center;
   width: 100%;
