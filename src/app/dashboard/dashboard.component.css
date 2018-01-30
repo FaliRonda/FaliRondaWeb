@@ -55,9 +55,18 @@
   background-attachment: fixed;
 }
 
+.itch-logo {
+  border-radius: 20%;
+  max-width: 64px!important;
+}
+
 @media (max-width: 600px) {
   .introduction .content {
-    margin: 0 10vw;
+    margin: 0 5vw;
+  }
+
+  .introduction a {
+    margin-right: 7px;
   }
 }
 
@@ -152,11 +161,10 @@ a {
 .project-name {
   background-color:#000;
   color: white;
+  display: flex;
   height: inherit;
   opacity: 0;
-  padding-right: 10px;
-  position:absolute;
-  width: 97%;
+  width: 100%;
 }
 
 .project-name h3 {
