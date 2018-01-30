@@ -24,6 +24,15 @@ nav .content {
   nav .content {
     width: 80vw;
   }
+
+  .fixed-top {
+    top: unset;
+    bottom: 0!important;
+  }
+
+  nav {
+    box-shadow: 0 5px 20px #5d5869;
+  }
 }
 
 @media (max-width: 400px) {
