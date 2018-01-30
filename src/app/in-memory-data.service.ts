@@ -7,6 +7,16 @@ export class InMemoryDataService implements InMemoryDbService {
     const gameBaseUrl = assetsBaseUrl + 'games/';
     const projects = [
       {
+        id: 6,
+        name: 'Reflections',
+        imgUrl: imgBaseUrl + 'reflections/main.jpg',
+        gameUrl: gameBaseUrl + 'reflections/index.html',
+        jobs: 'Writter, programmer, designer',
+        information: 'global game jam, málagajam vii, primavera 2018',
+        description: 'Junto a mi equipo de desarrollo y bajo el tema "Transmisión", buscamos salir de nuestra zona de confort y hacer algo nuevo. ' +
+          'Reflections es un juego íntimo que busca lanzar un mensaje que nos afecta a todos en muchos aspectos de la vida.',
+      },
+      {
         id: 1,
         name: 'Bucketneers',
         imgUrl: imgBaseUrl + 'bucketneers/main.png',
