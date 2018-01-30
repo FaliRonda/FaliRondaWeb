@@ -10,10 +10,9 @@
   <div class="separator"></div>
   <div class="content">
     <div class="row" *ngFor="let projects of projectRows">
-        <div *ngFor="let project of projects; let i = index" class="col-md-4">
-          <a routerLink="/detail/{{project.id}}" class="project">
-            <img src="{{project.imgUrl}}">
-            <p>{{project.name}}</p>
+        <div *ngFor="let project of projects; let i = index" class="col-sm-4">
+          <a routerLink="/detail/{{project.id}}" class="project" [ngStyle]="{'background-image':'url('+ project.imgUrl + ')'}">
+            <div class="project-name"><h3>{{project.name}}</h3></div>
           </a>
         </div>
     </div>
