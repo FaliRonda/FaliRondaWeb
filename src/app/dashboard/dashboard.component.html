@@ -1,16 +1,13 @@
-<div class="introduction vertical-align-parent">
+<div class="introduction vertical-align-parent" id="intro">
   <div class="content vertical-align-child">
     <h1>¡Hola!</h1>
-    <p class="no-margin">Soy Fali, un desarrollador de videojuegos de Málaga.</p>
+    <p class="no-margin">Soy Fali, desarrollador de videojuegos en Málaga.</p>
     <p class="no-margin">Me gusta programar, me encanta diseñar y es mi</p>
     <p class="no-margin">pasión gestionar proyectos y equipos.</p>
   </div>
 </div>
-
-<br/><br/><br/>
 <div class="projects" id="projects">
-  <h3>PROYECTOS</h3>
-  <br/>
+  <div class="separator"></div>
   <div class="content">
     <div class="row" *ngFor="let projects of projectRows">
         <div *ngFor="let project of projects; let i = index" class="col-md-4">
@@ -22,44 +19,16 @@
     </div>
   </div>
 </div>
-
-<br/><br/><br/>
-<div class="about" id="about">
-  <div class="content">
+<div class="introduction about vertical-align-parent" id="about">
+  <div class="separator"></div>
+  <div class="content content vertical-align-child">
     <div class="row">
-      <div class="col-md-4">
-        <img src="assets/images/photo.png">
-      </div>
-      <div class="col-md-8">
-        <h5>Te cuento un poco:</h5>
-        <p>Soy un desarrollador de Videojuegos de Málaga que disfruta trabajando con un equipo
-          para crear experiencias que dejen huella a los jugadores, tal y como me han dejado huella a mi.
-        </p>
-        <p>Soy fan de la aplicación pragmática de metodologías ágiles durante el proceso
-          de producción de juegos (me viene de formación profesional), así como de hacer hincapié en una fuerte
-          fase inicial de diseño y pre-producción como parte de una estrategia de éxito.
-        </p>
-        <p>En marzo de 2017, fundé un grupo joven e independiente de desarrollo de videojuegos
-          llamado <strong>LittleQuest</strong> y comenzamos a desarrollar <strong>Master of Tappers</strong>, un juego móvil como
-          nuestro primer proyecto. Más tarde en septiembre del mismo año inicié el <strong>Máster de Diseño y
-            Desarrollo de Videojuegos de la UMA</strong> y en noviembre emprendí la iniciativa <strong>Interjams</strong>
-            con el apoyo de la UMA y del Polo de Contenidos Digitales de Málaga, mediante el cual conseguí un espacio
-            semanal reservado en el Polo para la celebración de GameJams internas para los alumnos del Máster y para la
-            celebración de la Ludum Dare 40. También he sido trabajador en prácticas en 6Cocos desarrollando un juego
-            móvil y había dedicado mi tiempo libre a estudiar Unity.
-        </p>
-        <!-- <p>
-          Para saber más acerca de mí, puedes consultar <a href="#">este resumen</a>.
-        </p> -->
-        <p>El resto de mi tiempo, me dedico al desarrollo de aplicaciones web como programador
-          full-stack principalmente, a tocar la batería en grupos de música, jugar a diversos juegos
-          y a plantear más proyectos de los que puedo afrontar.
-        </p>
-        <p>
-          ¿Necesitas alguna cosa más o quieres simplemente saludar? ¡Aquí tienes mi <a href="mailto:rafael.ronda.garcia@gmail.com">correo</a>
-          y mi <a href="https://twitter.com/FaliRonda" target="_blank">twitter<i class="fa fa-twitter" aria-hidden="true"></i></a>!
-        </p>
-      </div>
+      <h2>¿Necesitas alguna cosa más?</h2>
+    </div>
+    <div class="row logos">
+      <a href="https://twitter.com/FaliRonda" target="_blank"><img src="../../assets/images/logos/twitter.png"/></a>
+      <a href="mailto:rafael.ronda.garcia@gmail.com"><img src="../../assets/images/logos/gmail.png"></a>
+      <a href="https://www.linkedin.com/in/rafael-ronda-garc%C3%ADa/" target="_blank"><img src="../../assets/images/logos/linkedin.png"/></a>
     </div>
   </div>
 </div>
