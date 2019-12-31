@@ -14,7 +14,7 @@ iframe {
   border:0px #000000 none;
   display: block;
   margin: 0 auto;
-  height: 560px;
+  height: 480px;
   width: 100%;
 }
 
@@ -35,4 +35,8 @@ img {
 
 p {
   text-align: justify;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
 }

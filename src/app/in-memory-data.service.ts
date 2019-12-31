@@ -7,132 +7,220 @@ export class InMemoryDataService implements InMemoryDbService {
     const gameBaseUrl = assetsBaseUrl + 'games/';
     const projects = [
       {
-        id: 6,
+        id: 7,
+        name: 'iCat - WIP',
+        imgUrl: imgBaseUrl + 'icat/icat.jfif',
+        images: [
+          imgBaseUrl + "icat/ref1.jfif"
+        ],
+        jobs: 'Game Designer, marketing, producer, writter and composer',
+        responsibilities: [
+          "Creative direction and game design documentation",
+          "UI flow design",
+          "Narrative and writing",
+          "Prioritization of features",
+          "Control of project progress"
+        ],
+        size: '3 persons',
+        information: 'Project for us to apply ASO and Marketing techniques, 2018',
+        descriptionLines: [
+          "Project started by Season Games with the main goal of applying marketing techniques and technologies and the usage of social media.",
+          "Currently WIP."
+        ],
+      },
+      {
+        id: 10,
+        name: 'Kira',
+        imgUrl: imgBaseUrl + 'kira/main.png',
+        images: [
+               imgBaseUrl + "kira/image1.png"
+        ],
+        jobs: 'Game Designer, producer, writter, programmer and artist',
+        responsibilities: [
+          "Creative direction: definition of high concept, user experience, USPs, target, etc",
+          "Mechanics design",
+          "Level design",
+          "UI flow design",
+          "Mockups elaboration",
+          "Characters conceptualization",
+          "Narrative and writing",
+          "Prioritization of features",
+          "Control of project progress"
+        ],
+        size: 'Developed by 2 people in 3 months',
+        information: 'UMA Master on Design and Development of Videogames, TFM, 2018',
+        descriptionLines: [
+          "At starting the project we were four prople in the team and we had a year for developing it, but as the team were not working well together we decide divide it into two projects.",
+          "We still had a three months ahead of us. At that point I decided to rethink the whole project, focusing the design in a way that would take advantage of our strengths and facilitate our artwork.",
+          "The result was this mobile game called Kira. You can download the APK with the following link:"
+        ],
+        resourcesLink: 'https://drive.google.com/open?id=1egPz1bP4E0XnHLa7es8rk0ExmJJWd4Jw',
+        resourcesText: 'Download link'
+      },
+      {
+        id: 15,
+        name: 'Chicken-O-Saurus Royale',
+        imgUrl: imgBaseUrl + 'chicken_o_saurus/main.png',
+        gameUrl: gameBaseUrl + 'chicken_o_saurus/index.html',
+        jobs: 'Game Designer, programmer and audio',
+        size: 'Developed by 2 people in 2 days',
+        information: 'Málaga Jam VIII, Summer 2018',
+        responsibilities: [
+          'Creative direction process',
+          'Mechanics design',
+          'Music and sound assets elaboration',
+          'Coding support',
+          'Control of project progress'
+        ],
+        descriptionLines: [
+          'This game was made between @alvarolupil, @CrisGarciaJ, @AndGarciaz and me during a Málaga Jam.',
+          'This time I directed the creative process of the game, made / integrate the music and audio by supporting coding.',
+          'I also kept an eye for ensuring that all development was fine in terms of delivery.'
+        ],
+      },
+      /* {
+        id: 20,
+        name: 'Cooking mecha',
+        imgUrl: imgBaseUrl + 'cooking_mecha/main.png',
+        gameUrl: gameBaseUrl + 'cooking_mecha/index.html',
+        jobs: 'Game Designer and composer',
+        information: 'Ludum Dare 41, Spring 2018',
+        description: 'Me and my regular team participated in another Ludum Dare and ended up making this game. This time I wanted to deal with the production of the audio for the game, so I composed the song that accompanies it and also worked on the sounds.',
+      }, */
+      {
+        id: 25,
         name: 'Reflections',
         imgUrl: imgBaseUrl + 'reflections/main.jpg',
         gameUrl: gameBaseUrl + 'reflections/index.html',
-        jobs: 'Writter, programmer, designer',
-        information: 'global game jam, málagajam vii, primavera 2018',
-        description: 'Junto a mi equipo de desarrollo y bajo el tema "Transmisión", buscamos salir de nuestra zona de confort y hacer algo nuevo. ' +
-          'Reflections es un juego íntimo que busca lanzar un mensaje que nos afecta a todos en muchos aspectos de la vida.',
+        jobs: 'Game Designer and writter',
+        size: 'Developed by 4 people in 2 days',
+        information: 'Global Game Jam, MálagaJam VII, Spring 2018',
+        responsibilities: [
+          'Creative direction process',
+          'Game flow and ends design',
+          'Narrative and writing',
+          'Control of project progress'
+        ],
+        descriptionLines: [
+          'Together with my development team and under the theme "Transmission", we are looking to get out of our comfort zone and do something different.',
+          'Reflections is an intimate game that seeks to launch a message that affects all of us in many aspects of life, relating our decisions to our fears.',
+          'In addition to directing the creative process and the team, I designed and wrote the texts and supported the programming.'
+        ],
       },
       {
-        id: 1,
+        id: 30,
         name: 'Bucketneers',
         imgUrl: imgBaseUrl + 'bucketneers/main.png',
         gameUrl: gameBaseUrl + 'bucketneers/index.html',
-        jobs: 'Programador',
-        information: 'Ludum Dare 40, Invierno 2017',
-        description: 'Durante mi formación en el Máster de Diseño y Desarrollo de Videojuegos ' +
-          'de la Universidad de Málaga tuvo lugar la Ludum Dare 40 con el tema "Cuanto más tienes, peor", así que formé un equipo con tres compañeros ' +
-          'que me daban buena espina (sus redes están en el juego) y gracias a la iniciativa Interjams, obtuvimos un espacio ' +
-          'en el Polo de Contenidos Digitales de Málaga para poder trabajar todo el fin de semana. Además de ' +
-          'dedicarme a la programación, mantuve el control en cuanto al estado del desarrollo, dirigí el flujo de trabajo y ' +
-          'di mi aporte en cuanto al diseño. Finalmente obtuvimos el puesto número 98 en la categoría "Overall", superando nuestras ' +
-          'expectativas por ser nuestra primera GameJam juntos y debido al número de participantes.',
+        jobs: 'Game Designer, producer and programmer',
+        size: 'Developed by 4 people in 2 days',
+        information: "Ludum Dare 40, Winter 2017",
+        responsibilities: [
+          'Creative direction process',
+          'Gameplay design',
+          'Technical design',
+          'Coding',
+          'Control of project progress'
+        ],
+        descriptionLines: [
+          'During the time I was studying the Master of Design and Development of Videogames, the Ludum Dare 40 took place, with the theme "The more you have, the worse".',
+          'I built a team, which would become the same as the TFM, and I requested a space in the Polo Digital (an entity in Malaga that promotes the development of videogames) with the support of the Master\'s direction.',
+          'That weekend I was directing the team in order to align them to close a project on time, directed the creative process of the design and supported the programming.',
+          'We finally got the 98th position in the category of teams at an international level.'
+        ],
         codeLink: 'https://github.com/RafaelRonda/Bucketneers',
       },
       {
-        id: 2,
+        id: 32,
         name: 'BeDo Rhythm',
         imgUrl: imgBaseUrl + 'bedo/main.png',
         images: [
           imgBaseUrl + "bedo/image1.jpg",
           imgBaseUrl + "bedo/image2.jpg"
         ],
-        jobs: 'Diseñador',
-        information: 'Trabajo final de Diseño, Máster de Videojuegos de la UMA, Invierno 2017',
-        description: 'Después de los 4 meses de duración del módulo de Diseño de Videojuegos del Máster, el profesorado ' +
-        'decidió que como ejercicio final para su evaluación deberiamos diseñar, documentar y presentar de un juego. ' +
-        'De ahí que dedicase mi tiempo para crear a BeDo, el guardián que tiene como tarea romper una maldición para traer ' +
-        'de nuevo la música al mundo. Podéis echar un vistazo a su diseño consultando ',
+        jobs: 'Game Designer',
+        information: 'UMA Master on Design and Development of Videogames, Design module project, Winter 2017',
+        description: 'Project developed after 4 months learning design in the UMA Master. Please, check the GDD (in spanish) in ',
         resourcesLink: 'https://trello.com/b/9YpqqKjN/gdd-bedo-rhythm-the-mute-curse',
-        resourcesText: 'este tablero de Trello.'
+        resourcesText: 'this Trello board.'
       },
       {
-        id: 3,
+        id: 35,
         name: 'Wizard\'s Castle ',
         imgUrl: imgBaseUrl + 'wizards_castle/main.jpg',
         images: [
           imgBaseUrl + "wizards_castle/main.jpg"
         ],
-        jobs: 'Diseñador',
-        information: 'Juego de mesa, Máster de Videojuegos de la UMA, Otoño 2017',
-        description: 'Diseñad un juego de mesa de tantos jugadores como personas del equipo. Más o menos así planteo Javi Cepa (Pixelatto)' +
-        'un ejercicio práctico de diseño para el Máster, así que junto a dos buenos compañeros (@FranHelix_ y @EvilAndrades) comenzamos a diseñar ' +
-        'lo que acabaría siendo Wizard\'s Castle. En base a la restricción principal, elegimos una forma de tablero triangular y lo ' +
-        'ambientamos en un castillo en ruinas, donde dos jugadores encarnarán a dos guerreros que deberán cooperar por derrotar ' +
-        'al tercer jugador, que será el señor oscuro del castillo. Nos propusimos otras restricción de cara a simplificar su producción ' +
-        'como concretar la fecha de terminación de cada una de las partes de su creación y limitar el número de elementos que podía contener' +
-        'el juego. Os dejo una imagen del tablero y el estado final de la producción en ' ,
+        jobs: 'Game Designer and producer',
+        size: 'Developed by 3 people in 3 day',
+        information: 'Board Game, UMA Master on Design and Development of Videogames, Autumn 2017',
+        responsibilities: [
+          'Game conceptualization',
+          'Mechanics design'
+        ],
+        descriptionLines: [
+          'During my time at the Master in design and development of video games @JaviCepa (founder of MálagaJam and @Pixelatto) proposed an exercise based on designing a board game for as many players as members of the team.',
+          'I teamed up with @FranHelix_ and @EvilAndrades and since we were three we chose a triangular board shape and set it in a ruined castle, where two players will play two warriors who will have to cooperate to defeat the third player, who will be the dark lord of the castle.',
+          'We proposed other restrictions in order to simplify its production, such as specifying the completion date of each of the parts of its creation or limiting the number of elements that could contain the game.',
+          'You can download the PDF files of the game at the link below.']
+          ,
         resourcesLink: 'https://trello.com/b/ANDEWzPP/master-juego-de-mesa-funnel',
-        resourcesText: 'este tablero de Trello.'
+        resourcesText: 'Trello board'
       },
-      {
-        id: 4,
-        name: 'OMG What can I do',
-        imgUrl: imgBaseUrl + 'omg/main.png',
-        gameUrl: gameBaseUrl + 'omg/index.html',
-        jobs: 'Programador',
-        information: 'Pequeño juego para el master de videojuegos de la uma, otoño 2017',
-        description: 'A lo largo del módulo de Diseño del máster, tuvimos también unos talleres básicos de ' +
-        'Unity para ir entrando en calor, donde nos proporcionaban código, assets, etc, para después pedirnos ' +
-        'David Báez (A Bonfire of souls) montar un pequeño proyecto propio con ese material. Como ya en mi tiempo ' +
-        'libre me había dedicado a aprender acerca de Unity y había hecho algunas cosillas, ' +
-        'preferí hacer un pequeño proyecto muy simple para cubrir el ejercicio, dedicándole unas 4 horas ya que en ' +
-        'ese momento no tenía mucho más tiempo, algún día lo mimaré más ;).',
-        codeLink: 'https://github.com/RafaelRonda/OMG-What-can-I-do'
-      },
-      {
-        id: 5,
+      // {
+      //   id: 4,
+      //   name: 'OMG What can I do',
+      //   imgUrl: imgBaseUrl + 'omg/main.png',
+      //   gameUrl: gameBaseUrl + 'omg/index.html',
+      //   jobs: 'Programador',
+      //   information: 'Pequeño juego para el master de videojuegos de la uma, otoño 2017',
+      //   description: 'A lo largo del módulo de Diseño del máster, tuvimos también unos talleres básicos de ' +
+      //   'Unity para ir entrando en calor, donde nos proporcionaban código, assets, etc, para después pedirnos ' +
+      //   'David Báez (A Bonfire of souls) montar un pequeño proyecto propio con ese material. Como ya en mi tiempo ' +
+      //   'libre me había dedicado a aprender acerca de Unity y había hecho algunas cosillas, ' +
+      //   'preferí hacer un pequeño proyecto muy simple para cubrir el ejercicio, dedicándole unas 4 horas ya que en ' +
+      //   'ese momento no tenía mucho más tiempo, algún día lo mimaré más ;).',
+      //   codeLink: 'https://github.com/RafaelRonda/OMG-What-can-I-do'
+      // },
+      /* {
+        id: 40,
         name: 'Midnight Water Glass',
         imgUrl: imgBaseUrl + 'glass/main.png',
         gameUrl: gameBaseUrl + 'glass/index.html',
-        jobs: 'Diseñador, Programador',
-        information: 'Pequeño juego para el master de videojuegos de la uma, otoño 2017',
-        description: 'Con la idea de plantear el diseño de juego con el objetivo de transmitir una experiencia concreta ' +
-        'a otra persona, Alberto Rico (Rodaja) nos propuso desarrollar uno básico: un flatgame, usando las mismas restricciones ' +
-        'que tuvo él al desarrollar el suyo en una GameJam, como no poder dedicarle más de alguna hora a desarrollar nuestros propios gráficos, '+
-        'el desarrollo casero todos los assets de forma caseta y solo poder implementar movimiento básico en código, así que planteé y '+
-        'desarrollé este proyecto a raíz de una experiencia de mi infancia, para experimentarla solo tienes que usar las teclas de dirección. '+
-        '¡Espero que te guste! Ah, aquí tienes el ',
-        resourcesLink: 'https://itch.io/jam/flatgame-annual-2016',
-        resourcesText: 'enlace de una Jam de FlatGames.'
-      },
-      {
-        id: 6,
+        jobs: 'Game Designer, programmer, artist and composer',
+        information: 'Master on Design and Development of videogames, Practice, Autum 2017',
+        description: 'This Flat Game corresponds to a job ordered by @AlbertoRico. The aim was to guide the design of the game to convey a concrete experience. We only had one hour to develop our own graphics and we were only allowed to implement basic movement in code.'
+      }, */
+      /* {
+        id: 45,
         name: 'Shinkai',
         imgUrl: imgBaseUrl + 'shinkai/main.png',
         gameUrl: gameBaseUrl + 'shinkai/index.html',
-        jobs: 'Programador',
-        information: 'Málaga Jam 6, verano 2017',
-        description: 'Cómo segundo proyecto de LittleQuest y siendo la primera GameJam del equipo, ' +
-        'desarrollamos este juego donde nos decantamos en destacar por el arte y el sonido de nuestro juego. ' +
-        'Hasta llegar a esto sufrimos algunos conflictos internos en el equipo, pero gracias a ellos conseguimos ' +
-        'en forma de chapa el reconocimiento por parte de la asociación Málaga Jam, por superar estos problemas de ' +
-        'comunicación y gestión y conseguir terminar la Jam con su objetivo principal: un juego acabado; sin que los ' +
-        'problemas nos llevaran a abandonar la Jam. Para jugar usa las teclas direccionales para mover a Bara y la ' +
-        'tecla espacio para atrapar a los peces pequeños y lanzarlos a los grandes, ya que quieren atacar tu tesoro.',
+        jobs: 'Game Designer and programmer',
+        information: 'Málaga Jam VI, Summer 2017',
+        description: 'As the second LittleQuest project and being the first GameJam of the team, we developed this game where we chose to stand out for art and sound, which was our strong point. Up to this point we suffered some internal conflicts in the team, but we managed to solve them and we were recognized for it. To play, use the arrow keys to move Bara (the main fish) and the space key to catch the small fish and throw them to the big ones, since they want to attack your treasure.',
         codeLink: 'https://github.com/RafaelRonda/Shinkai'
-      },
+      }, */
       {
-        id: 7,
+        id: 50,
         name: 'Master of Tappers',
         imgUrl: imgBaseUrl + 'mot/main.png',
         gameUrl: gameBaseUrl + 'mot/index.html',
-        jobs: 'Productos, Programador',
-        information: 'Proyecto de Littlequest, primavera 2017',
-        description: 'Un día al llegar a casa tomé la determinación de montar un grupo de desarrollo y comenzar un proyecto, ' +
-        'así que le pedí a un compañero que pensara una idea cualquiera y reuní a unos compañeros para fundar lo que se pasó a ' +
-        'llamar LittlQuest. Aprendí de aquí y allá con la ayuda de libros y la comunidad y conseguimos que aquella idea sin mucho sentido ' +
-        'cobrase forma durante la fase de pre-producción del proyecto. Propuse hacer uso de un enfoque pragmático de Scrum ' +
-        'y me dediqué a la producción y programación. El resultado después de 3 meses fue alcanzar una versión ' +
-        'con el contenido que definimos en su fecha y comprendimos que el alcance del proyecto se nos iría de las manos, ' +
-        'así que después de explicárselo al resto del equipo, decidimos aparcarlo y desarrollar proyectos más pequeños con vistas a ' +
-        'consolidarnos más y retomarlo algún día. Es un juego móvil, pero os dejo una versión web para que podáis intentar ' +
-        'derrotar a los 9 enemigos y al jefe final del nivel 1, pulsando los botones de las esquinas siguiendo el orden ' +
-        'que aparece en el cuadro central superior.',
-        codeLink: 'https://github.com/RafaelRonda/MasterOfTappers'
+        size: 'Developed by 7 people in 3 months',
+        jobs: 'Game Designer, producer, programmer and animator',
+        information: 'Littlequest project, Spring 2017',
+        responsibilities: [
+          'Mechanics design',
+          'Coding',
+          'Product management',
+          'Team lead'
+        ],
+        descriptionLines: [
+          'One day I decided to start making video games to redirect my professional life, so when I got home I decided to set up a development group and start a project. I asked a colleague to think of any idea and gathered 6 colleagues to found LittleQuest.',
+          'I started studying on my own through books and lectures and taught my team to work through a pragmatic Scrum. The result of 3 months of work was this alpha version of the game, we met the plan.',
+          'After this I realized that the scope of the project was too ambitious and proposed to park it and develop smaller projects with a view to learning more iteratively.',
+          'It\'s a mobile game, but here you can see a web version so you can try it, you have to press the buttons in the corners following the order that appears in the upper central box.'
+        ],
       },
     ];
     return {projects};

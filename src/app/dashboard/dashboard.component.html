@@ -1,36 +1,29 @@
-<div class="introduction vertical-align-parent" id="intro">
-  <br/>
-  <br/>
-  <div class="content vertical-align-child">
-    <h1>¡Hola!</h1>
-    <p class="no-margin">Soy Fali, desarrollador de videojuegos en Málaga.</p>
-    <p class="no-margin">Me gusta programar, me encanta diseñar y es mi</p>
-    <p class="no-margin">pasión gestionar proyectos y equipos.</p>
-  </div>
-</div>
-<div class="projects" id="projects">
-  <br/>
-  <div class="content">
-    <div class="row" *ngFor="let projects of projectRows">
-        <div *ngFor="let project of projects; let i = index" class="col-sm-4">
-          <a routerLink="/detail/{{project.id}}" class="project" [ngStyle]="{'background-image':'url('+ project.imgUrl + ')'}">
-            <div class="project-name"><h3>{{project.name}}</h3></div>
-          </a>
-        </div>
-    </div>
+<div class="projects" id="projects"></div>
+<div class="content">
+  <div class="row projects-row" *ngFor="let projects of projectRows">
+      <div *ngFor="let project of projects; let i = index" class="col-sm-4">
+        <a class="project-name" routerLink="/detail/{{project.id}}" class="project" [ngStyle]="{'background-image':'url('+ project.imgUrl + ')'}"></a>
+      </div>
   </div>
 </div>
 <br/>
 <div class="introduction about vertical-align-parent" id="about">
+    <div class="content presentation vertical-align-child">
+      <h2>Hey!</h2>
+      <p class="no-margin">I'm Fali, Producer at Virtually Live in Malaga</p>
+      <p class="no-margin">I like to compose, coding and I love production</p>
+      <p class="no-margin">BUT my passion is:</p><h1>Game Design!</h1>
+    </div>
   <div class="content content vertical-align-child">
     <div class="row">
-      <h2>¿Mantenemos el contacto?</h2>
+      <h2>Let's keep in touch!</h2>
     </div>
     <div class="row logos">
       <a href="https://twitter.com/FaliRonda" target="_blank"><img src="../../assets/images/logos/twitter.png"/></a>
       <a href="mailto:rafael.ronda.garcia@gmail.com"><img src="../../assets/images/logos/gmail.png"></a>
       <a href="https://www.linkedin.com/in/falironda/" target="_blank"><img src="../../assets/images/logos/linkedin.png"/></a>
-      <a href="https://falironda.itch.io/" target="_blank"><img class="itch-logo" src="../../assets/images/logos/itch.jpg"/></a>
+      <a class="cv-logo" href="https://drive.google.com/open?id=1qXJYG99MAX6gRxZ48FJOSzHvbI8IHjLn" target="_blank"><img src="../../assets/images/logos/cv.png"/></a>
+      <!-- <a href="https://falironda.itch.io/" target="_blank"><img class="itch-logo" src="../../assets/images/logos/itch.jpg"/></a> -->
     </div>
   </div>
 </div>

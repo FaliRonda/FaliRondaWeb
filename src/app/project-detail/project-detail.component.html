@@ -1,25 +1,35 @@
 <br/>
+<br/>
+<br/>
+<br/>
 <div *ngIf="project" class="project">
-  <h3>{{ project.name | uppercase }}</h3>
-  <h6>{{ project.jobs | uppercase }}</h6>
-  <h6>{{ project.information | uppercase }}</h6>
+  <h3>{{ project.name }}</h3>
+  <h6>{{ project.jobs }}</h6>
+  <h6>{{ project.size }}</h6>
+  <h6>{{ project.information }}</h6>
   <br/>
-  <h5>RESUMEN</h5>
-  <p>{{ project.description }}<a [hidden]="!project.resourcesLink" target="_blank" href='{{ project.resourcesLink }}'>{{ project.resourcesText }}</a></p>
-  <p [hidden]="!project.extraInfo">{{ project.extraInfo }}</p>
+  <div [hidden]="!project.responsibilities">
+    <h5>Responsibilities</h5>
+    <ul>
+      <li *ngFor="let responsibility of project.responsibilities">{{ responsibility }}</li>
+    </ul>
+  </div>
   <div [hidden]="!project.images">
-      <br/>
-      <h5>IMÁGENES</h5>
-      <img *ngFor="let image of project.images;" src="{{ image }}">
-    </div>
+    <br/>
+    <h5>Images</h5>
+    <img *ngFor="let image of project.images;" src="{{ image }}">
+  </div>
   <div [hidden]="!project.gameUrl">
     <br/>
-    <h5>JUEGO</h5>
+    <h5>Game</h5>
     <iframe [src]="getGameUrl()" name="{{ project.name }}" scrolling="no" frameborder="1"></iframe>
   </div>
+  <h5>Summary</h5>
+  <div *ngFor="let line of project.descriptionLines;">{{ line }}<br><br></div><a [hidden]="!project.resourcesLink" target="_blank" href='{{ project.resourcesLink }}'>{{ project.resourcesText }}</a>
+  <p [hidden]="!project.extraInfo">{{ project.extraInfo }}</p>
   <div [hidden]="!project.codeLink">
     <br/>
-    <h5>CÓDIGO</h5>
+    <h5>Code</h5>
     <a target="_blank" href='{{ project.codeLink }}'>{{ project.codeLink }}</a>
   </div>
   <br/>
