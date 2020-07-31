@@ -6,28 +6,28 @@ export class InMemoryDataService implements InMemoryDbService {
     const imgBaseUrl = assetsBaseUrl + 'images/';
     const gameBaseUrl = assetsBaseUrl + 'games/';
     const projects = [
-      {
-        id: 7,
-        name: 'iCat - WIP',
-        imgUrl: imgBaseUrl + 'icat/icat.jfif',
-        images: [
-          imgBaseUrl + "icat/ref1.jfif"
-        ],
-        jobs: 'Game Designer, marketing, producer, writter and composer',
-        responsibilities: [
-          "Creative direction and game design documentation",
-          "UI flow design",
-          "Narrative and writing",
-          "Prioritization of features",
-          "Control of project progress"
-        ],
-        size: '3 persons',
-        information: 'Project for us to apply ASO and Marketing techniques, 2018',
-        descriptionLines: [
-          "Project started by Season Games with the main goal of applying marketing techniques and technologies and the usage of social media.",
-          "Currently WIP."
-        ],
-      },
+      // {
+      //   id: 7,
+      //   name: 'iCat - WIP',
+      //   imgUrl: imgBaseUrl + 'icat/icat.jfif',
+      //   images: [
+      //     imgBaseUrl + "icat/ref1.jfif"
+      //   ],
+      //   jobs: 'Game Designer, marketing, producer, writter and composer',
+      //   responsibilities: [
+      //     "Creative direction and game design documentation",
+      //     "UI flow design",
+      //     "Narrative and writing",
+      //     "Prioritization of features",
+      //     "Control of project progress"
+      //   ],
+      //   size: '3 persons',
+      //   information: 'Project for us to apply ASO and Marketing techniques, 2018',
+      //   descriptionLines: [
+      //     "Project started by Season Games with the main goal of applying marketing techniques and technologies and the usage of social media.",
+      //     "Currently WIP."
+      //   ],
+      // },
       {
         id: 10,
         name: 'Kira',
@@ -130,43 +130,43 @@ export class InMemoryDataService implements InMemoryDbService {
         ],
         codeLink: 'https://github.com/RafaelRonda/Bucketneers',
       },
-      {
-        id: 32,
-        name: 'BeDo Rhythm',
-        imgUrl: imgBaseUrl + 'bedo/main.png',
-        images: [
-          imgBaseUrl + "bedo/image1.jpg",
-          imgBaseUrl + "bedo/image2.jpg"
-        ],
-        jobs: 'Game Designer',
-        information: 'UMA Master on Design and Development of Videogames, Design module project, Winter 2017',
-        description: 'Project developed after 4 months learning design in the UMA Master. Please, check the GDD (in spanish) in ',
-        resourcesLink: 'https://trello.com/b/9YpqqKjN/gdd-bedo-rhythm-the-mute-curse',
-        resourcesText: 'this Trello board.'
-      },
-      {
-        id: 35,
-        name: 'Wizard\'s Castle ',
-        imgUrl: imgBaseUrl + 'wizards_castle/main.jpg',
-        images: [
-          imgBaseUrl + "wizards_castle/main.jpg"
-        ],
-        jobs: 'Game Designer and producer',
-        size: 'Developed by 3 people in 3 day',
-        information: 'Board Game, UMA Master on Design and Development of Videogames, Autumn 2017',
-        responsibilities: [
-          'Game conceptualization',
-          'Mechanics design'
-        ],
-        descriptionLines: [
-          'During my time at the Master in design and development of video games @JaviCepa (founder of MálagaJam and @Pixelatto) proposed an exercise based on designing a board game for as many players as members of the team.',
-          'I teamed up with @FranHelix_ and @EvilAndrades and since we were three we chose a triangular board shape and set it in a ruined castle, where two players will play two warriors who will have to cooperate to defeat the third player, who will be the dark lord of the castle.',
-          'We proposed other restrictions in order to simplify its production, such as specifying the completion date of each of the parts of its creation or limiting the number of elements that could contain the game.',
-          'You can download the PDF files of the game at the link below.']
-          ,
-        resourcesLink: 'https://trello.com/b/ANDEWzPP/master-juego-de-mesa-funnel',
-        resourcesText: 'Trello board'
-      },
+      // {
+      //   id: 32,
+      //   name: 'BeDo Rhythm',
+      //   imgUrl: imgBaseUrl + 'bedo/main.png',
+      //   images: [
+      //     imgBaseUrl + "bedo/image1.jpg",
+      //     imgBaseUrl + "bedo/image2.jpg"
+      //   ],
+      //   jobs: 'Game Designer',
+      //   information: 'UMA Master on Design and Development of Videogames, Design module project, Winter 2017',
+      //   description: 'Project developed after 4 months learning design in the UMA Master. Please, check the GDD (in spanish) in ',
+      //   resourcesLink: 'https://trello.com/b/9YpqqKjN/gdd-bedo-rhythm-the-mute-curse',
+      //   resourcesText: 'this Trello board.'
+      // },
+      // {
+      //   id: 35,
+      //   name: 'Wizard\'s Castle ',
+      //   imgUrl: imgBaseUrl + 'wizards_castle/main.jpg',
+      //   images: [
+      //     imgBaseUrl + "wizards_castle/main.jpg"
+      //   ],
+      //   jobs: 'Game Designer and producer',
+      //   size: 'Developed by 3 people in 3 day',
+      //   information: 'Board Game, UMA Master on Design and Development of Videogames, Autumn 2017',
+      //   responsibilities: [
+      //     'Game conceptualization',
+      //     'Mechanics design'
+      //   ],
+      //   descriptionLines: [
+      //     'During my time at the Master in design and development of video games @JaviCepa (founder of MálagaJam and @Pixelatto) proposed an exercise based on designing a board game for as many players as members of the team.',
+      //     'I teamed up with @FranHelix_ and @EvilAndrades and since we were three we chose a triangular board shape and set it in a ruined castle, where two players will play two warriors who will have to cooperate to defeat the third player, who will be the dark lord of the castle.',
+      //     'We proposed other restrictions in order to simplify its production, such as specifying the completion date of each of the parts of its creation or limiting the number of elements that could contain the game.',
+      //     'You can download the PDF files of the game at the link below.']
+      //     ,
+      //   resourcesLink: 'https://trello.com/b/ANDEWzPP/master-juego-de-mesa-funnel',
+      //   resourcesText: 'Trello board'
+      // },
       // {
       //   id: 4,
       //   name: 'OMG What can I do',
