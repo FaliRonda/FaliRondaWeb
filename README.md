@@ -1,2 +1,5 @@
 # FaliRondaWeb
-Proyecto de mi web personal a modo de portfolio
+## Commmands
+- Local deployment: `ng serve`
+- Production build `ng build --prod`
+- Cloud deployment: `firebase deploy`
