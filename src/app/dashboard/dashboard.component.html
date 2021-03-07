@@ -1,5 +1,23 @@
-<br/>
-<br/>
+<div class="introduction about vertical-align-parent" id="about">
+  <div class="presentation content vertical-align-child">
+    <h2>Hi! I'm Fali Ronda</h2>
+    <p class="no-margin">I'm Producer at Pixelatto in Malaga</p>
+    <p class="no-margin">I love to compose, coding and game design and production!</p>
+    <img class="picture" src="../../assets/images/foto_perfil_cara.jpg">
+  </div>
+<div class="touch content content vertical-align-child">
+  <div class="row">
+    <h2>Let's keep in touch!</h2>
+  </div>
+  <div class="row logos">
+    <a href="https://twitter.com/FaliRonda" target="_blank"><img src="../../assets/images/logos/twitter.png"/></a>
+    <a href="mailto:rafael.ronda.garcia@gmail.com"><img src="../../assets/images/logos/gmail.png"></a>
+    <a href="https://www.linkedin.com/in/falironda/" target="_blank"><img src="../../assets/images/logos/linkedin.png"/></a>
+    <a class="cv-logo" href="https://drive.google.com/open?id=1qXJYG99MAX6gRxZ48FJOSzHvbI8IHjLn" target="_blank"><img src="../../assets/images/logos/cv.png"/></a>
+    <!-- <a href="https://falironda.itch.io/" target="_blank"><img class="itch-logo" src="../../assets/images/logos/itch.jpg"/></a> -->
+  </div>
+</div>
+</div>
 <!-- <div class="introduction-2 about vertical-align-parent" id="intro">
   <video id="video" autoplay>
     <source src="../../assets/videos/intro.mp4" type="video/mp4">
@@ -7,30 +25,10 @@
 </div> -->
 <div class="projects" id="projects"></div>
 <div class="content">
+  <h1>PROJECTS</h1>
   <div class="row projects-row" *ngFor="let projects of projectRows">
       <div *ngFor="let project of projects; let i = index" class="col-sm-4">
         <a class="project-name" routerLink="/detail/{{project.id}}" class="project" [ngStyle]="{'background-image':'url('+ project.imgUrl + ')'}"></a>
       </div>
-  </div>
-</div>
-<br/>
-<div class="introduction about vertical-align-parent" id="about">
-    <div class="presentation content vertical-align-child">
-      <h2>Hey!</h2>
-      <p class="no-margin">I'm Fali, Producer at Pixelatto in Malaga</p>
-      <p class="no-margin">I like to compose, coding and I love production</p>
-      <p class="no-margin">BUT my passion is:</p><h1>Game Design!</h1>
-    </div>
-  <div class="touch content content vertical-align-child">
-    <div class="row">
-      <h2>Let's keep in touch!</h2>
-    </div>
-    <div class="row logos">
-      <a href="https://twitter.com/FaliRonda" target="_blank"><img src="../../assets/images/logos/twitter.png"/></a>
-      <a href="mailto:rafael.ronda.garcia@gmail.com"><img src="../../assets/images/logos/gmail.png"></a>
-      <a href="https://www.linkedin.com/in/falironda/" target="_blank"><img src="../../assets/images/logos/linkedin.png"/></a>
-      <a class="cv-logo" href="https://drive.google.com/open?id=1qXJYG99MAX6gRxZ48FJOSzHvbI8IHjLn" target="_blank"><img src="../../assets/images/logos/cv.png"/></a>
-      <!-- <a href="https://falironda.itch.io/" target="_blank"><img class="itch-logo" src="../../assets/images/logos/itch.jpg"/></a> -->
-    </div>
   </div>
 </div>

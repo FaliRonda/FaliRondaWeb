@@ -42,7 +42,7 @@ video {
   opacity: 0.8;
   background-image: url("../../assets/images/bg4.png");
   margin: 0!important;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
 }
 
@@ -67,7 +67,6 @@ video {
 .introduction p {
   color: rgb(0, 0, 0);
   font-size: 24px;
-  font-weight: bold;
   margin: 0;
 }
 
@@ -95,7 +94,7 @@ a {
 }
 
 .projects-row {
-  padding: 0 10vw;
+  padding: 0 20vw;
 }
 
 .separator {
@@ -153,6 +152,21 @@ a {
   left: 0% !important;
 }
 
+.presentation,
+.touch {
+  background-color: rgb(255, 251, 255);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgb(123, 120, 124);
+  padding: 1.5rem;
+  width: fit-content;
+}
+
+.introduction .picture {
+  width: 10rem !important;
+  border-radius: 100%;
+  margin-top: 1rem;
+}
+
 .touch {
   top: 80% !important;
   margin-right: 10% !important;
@@ -161,7 +175,15 @@ a {
 .projects {
   margin: auto;
   width: 75vw;
-  margin-top: 65px;
+  margin-top: 2rem;
+}
+
+.content h1 {
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 .project {
@@ -234,9 +256,18 @@ a {
 }
 
 @media (max-width: 600px) {
+  .presentation,
+  .touch {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
   .about .content{
     text-align: center;
     margin: 0 7%!important;
+    padding-bottom: 2rem;
   }
   .about .content img {
     width: 80%;
@@ -251,18 +282,41 @@ a {
   .about .logos a {
     margin: auto;
   }
+  
+  .touch {
+    right: 7% !important;
+  }
+
+  .touch h2 {
+    width: 100%;
+    margin: auto;
+    margin: 1rem 0;
+    font-size: 20px;
+  }
 
   .introduction .content {
     margin: 0 5vw;
+  }
+
+  .introduction {
+    height: 60vh;
   }
 
   .introduction a {
     margin-right: 7px;
   }
 
+  .introduction .picture {
+    width: 100px !important;
+  }
+
   .module {
     font-size: 10px;
     max-height: 75px;
+  }
+
+  .presentation {
+    padding-top: 2rem;
   }
 
   .presentation h1{
@@ -286,6 +340,13 @@ a {
 
   .project {
     height: 75vw;
+  }
+  .projects-row {
+    padding: 0;
+  }
+
+  .content h1 {
+    font-size: 24px;
   }
 }
 
