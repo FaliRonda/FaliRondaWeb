@@ -8,15 +8,22 @@
       </div>
     </div>
     <div class="portfolio-flex-row">
-      {% for post in site.posts %}
+      {% for project in site.projects %}
       <div class="portfolio-flex-item portfolio-item">
-        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+        <a id="link-{{ project.id }}" href="#portfolioModal-{{ project.id }}" class="portfolio-link" data-toggle="modal">
+
+          <script>
+            $("#link-{{ project.id }}").on("click", function(){
+              CreateGameiFrame("{{ project.id }}", "{{ project.gameUrl }}");
+            })
+          </script>
+          
           <div class="caption">
             <div class="caption-content">
               <i class="fa fa-search-plus fa-3x"></i>
             </div>
           </div>
-          <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+          <img src="assets/images/{{ project.mainImage.url }}" class="img-responsive" style="min-width: -webkit-fill-available;" alt="{{ project.mainImage.alt }}">
         </a>
       </div>
       {% endfor %}
