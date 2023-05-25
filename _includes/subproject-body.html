@@ -1,0 +1,56 @@
+﻿<h3>{{ subproject.name }}</h3>
+<hr class="star-primary">
+{% if subproject.size != "-" %}
+<h6>{{ subproject.size }}</h6>
+{% endif %}
+{% if subproject.information %}
+<h6>{{ subproject.information }}</h6>
+{% endif %}
+
+{% if subproject.responsibilities %}
+<h5>Responsibilities</h5>
+<ul class="item-details">
+  {% for responsibility in subproject.responsibilities %}
+  <li>{{ responsibility }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% if subproject.images %}
+<div>
+  <h5>Images</h5>
+  {% for image in subproject.images %}
+  <img class="img-responsive img-centered" alt="{{ image.alt }}" src="assets/images/{{ image.url }}">
+  {% endfor %}
+</div>
+{% elsif subproject.videoUrl %}
+{{ subproject.videoUrl }}
+{% elsif subproject.gameUrl %}
+<div id="game-{{ subproject.id }}">
+  <h5>Game</h5>
+</div>
+
+{% endif %}
+
+{% if subproject.summary %}
+<h5>Summary</h5>
+<div>
+  {{ subproject.summary }}
+  <br>
+</div>
+{% endif %}
+
+{% if subproject.resourcesLink %}
+<a target="_blank" href='{{ subproject.resourcesLink }}'>{{ subproject.resourcesText }}</a>
+{% endif %}
+
+{% if subproject.extraInfo %}
+<p>{{ subproject.extraInfo }}</p>
+{% endif %}
+
+{% if subproject.codeLink %}
+<div>
+  <h5>Code</h5>
+  <a target="_blank" href='{{ subproject.codeLink }}'>{{ subproject.codeLink }}</a>
+</div>
+{% endif %}

@@ -64,6 +64,121 @@ defaults:
       permalink: ""
 
 projects:
+  - name: Campero Games
+    id: 13
+    mainImage:
+      url: "campero/main.jpg"
+      alt: "Campero Games logo"
+    jobs: "Studio Producer"
+    size: "-"
+    responsibilities:
+      - "Administration support"
+      - "Team manager"
+      - "Roles, responsibilities and communication hierarchy definition"
+      - "Milestones roadmap elaboration"
+      - "Production processes design and implementation (adapted Scrumban, tasking, bugs handling...)"
+      - "Communication processes design and implementation"
+      - "Coordination with publishers"
+    summary: "Find the studio website at the next link:"
+    resourcesLink: "https://www.camperogames.com/"
+    resourcesText: "Campero Games website"
+  - name: Pixelatto
+    id: 12
+    mainImage:
+      url: "pixelatto/main.png"
+      alt: "Pixelatto logo"
+    jobs: "Studio Producer"
+    responsibilities:
+      - "Studio management"
+      - "Business administration (taxes, HR…)"
+      - "Prepare and review legal documentation"
+      - "Processing of grants and subsidies"
+      - "Office manager"
+      - "Housing investment"
+      - "Negotiating and closing deals"
+      - "Team building (improving communication and quality of life)"
+      - "Recruitment"
+      - "Team manager (vacations, interns, revisions…)"
+    subprojects:
+      - name: Orbtale
+        size: "-"
+        videoUrl: '<iframe width="1280" height="720" src="https://www.youtube.com/embed/uu5suVnXRic" title="Reventure: Orbtale Kickstarter Trailer (Official)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        responsibilities:
+          - "Kickstarter campaign design support"
+          - "Backers management (backerkit)"
+          - "Game design support"
+          - "Art support"
+          - "Outsourcing/freelances management"
+          - "Networking with editorials and partners at tabletop events"
+          - "Marketing operations with stakeholders"
+          - "Game translation management"
+          - "Game production and distribution"
+        summary: "Find the Kickstarter campaign at the next link:"
+        resourcesLink: "https://www.kickstarter.com/projects/javicepa/reventure-orbtale"
+        resourcesText: "Orbtale KS campaign"
+      - name: Tabletop Creator
+        size: "-"
+        videoUrl: '<iframe width="1280" height="720" src="https://www.youtube.com/embed/CK0ZA9Cp0xA" title="Tabletop Creator Trailer (Official)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        responsibilities:
+          - "Outsourcing/freelances management"
+          - "Trailer design and creation"
+          - "Product development"
+          - "Community support"
+          - "Discounts management"
+        summary: "Find the product page at the next link:"
+        resourcesLink: "https://store.steampowered.com/app/861590/Tabletop_Creator"
+        resourcesText: "Tabletop Creator Steam page"
+      - name: Website
+        size: "-"
+        responsibilities:
+          - "www.pixelatto.com development (front, e-commerce, deployment, SEO, analytics…)"
+          - "Blog posts redaction"
+          - "Outsourcing/freelances management (UI/UX, tech support)"
+        resourcesLink: "https://www.pixelatto.com/"
+        resourcesText: "Link to the website"
+      - name: Reventure
+        size: "-"
+        videoUrl: '<iframe width="1128" height="635" src="https://www.youtube.com/embed/aY7EVPVZk2g" title="Reventure - Release Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        responsibilities:
+          - "Events presentations and awards reception"
+          - "Tech task development (Unity, C#)"
+          - "ASO"
+          - "Discounts management"
+        summary: "Find the game page at the next link:"
+        resourcesLink: "https://store.steampowered.com/app/900270/Reventure/"
+        resourcesText: "Reventure Steam page"
+      - name: Card Creator
+        size: "-"
+        videoUrl: '<iframe width="1280" height="720" src="https://www.youtube.com/embed/liMw3yfeTdo" title="Card Creator 2.0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        responsibilities:
+          - "Community management and support"
+          - "Bug fixing and distribution (Steam)"
+          - "Discounts management"
+        summary: "Find the product page at the next link:"
+        resourcesLink: "https://store.steampowered.com/app/523600/Card_Creator/"
+        resourcesText: "Card Creator Steam page"
+  - name: Ghost Racing
+    mainImage:
+        url: "ghostracing/main.jpg"
+        alt: "Ghost Racing Project"
+    videoUrl: '<iframe width="1280" height="720" src="https://www.youtube.com/embed/RC9j2-QavLs" title="Ghost Racing: Formula E Android Gameplay [1080p/60fps]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    jobs: "Producer"
+    size: "-"
+    information: "Developed in Virtually Live"
+    responsibilities:
+      - "Product Backlog setup and maintenance"
+      - "Processes development based on Agile methodologies as Scrum or Kanban"
+      - "Project tracking and reporting"
+      - "International coordination between different studios"
+      - "Release processes handling working with mobile stores"
+      - "LiveOps management"
+      - "Mid-low level planning with Scrum, using Hansoft / Notion"
+      - "Mediator / communication problems solver"
+      - "Team recruitment"
+      - "QA management"
+      - "High level planning with Gantt techniques with MS Project"
+      - "Features game design"
+      - "Internal products / tools design"
   - name: Kira
     id: 1
     mainImage: 

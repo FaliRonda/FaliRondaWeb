@@ -1,0 +1,62 @@
+﻿<h2>{{ project.name }}</h2>
+<hr class="star-primary">
+
+<h4>{{ project.jobs }}</h4>
+{% if project.size != "-" %}
+<h6>{{ project.size }}</h6>
+{% endif %}
+
+{% if project.information %}
+<h6>{{ project.information }}</h6>
+<br/>
+{% endif %}
+
+{% if project.responsibilities %}
+<h5>Responsibilities</h5>
+<ul class="item-details">
+  {% for responsibility in project.responsibilities %}
+  <li>{{ responsibility }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% if project.images %}
+<div>
+  <h5>Images</h5>
+  {% for image in project.images %}
+  <img class="img-responsive img-centered" alt="{{ image.alt }}" src="assets/images/{{ image.url }}">
+  {% endfor %}
+</div>
+{% elsif project.videoUrl %}
+{{ project.videoUrl }}
+{% elsif project.gameUrl %}
+<div id="game-{{ project.id }}">
+  <h5>Game</h5>
+  <!--<iframe src="assets/games/{{ project.gameUrl }}" name="{{ project.name }}" scrolling="no" frameborder="1"></iframe>-->
+
+</div>
+
+{% endif %}
+
+{% if project.summary %}
+<h5>Summary</h5>
+<div>
+  {{ project.summary }}
+  <br>
+</div>
+{% endif %}
+
+{% if project.resourcesLink %}
+<a target="_blank" href='{{ project.resourcesLink }}'>{{ project.resourcesText }}</a>
+{% endif %}
+
+{% if project.extraInfo %}
+<p>{{ project.extraInfo }}</p>
+{% endif %}
+
+{% if project.codeLink %}
+<div>
+  <h5>Code</h5>
+  <a target="_blank" href='{{ project.codeLink }}'>{{ project.codeLink }}</a>
+</div>
+{% endif %}

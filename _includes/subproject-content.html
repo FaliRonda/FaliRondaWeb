@@ -1,0 +1,17 @@
+﻿<h2>{{ project.name }}</h2>
+<h4>{{ project.jobs }}</h4>
+{% if project.responsibilities %}
+<h5>Responsibilities</h5>
+<ul class="item-details">
+    {% for responsibility in project.responsibilities %}
+    <li>{{ responsibility }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<hr class="star-primary">
+{% for subproject in project.subprojects %}
+{% include subproject-body.html %}
+{% if forloop.last == false %}
+<hr class="star-primary">
+{% endif %}
+{% endfor %}

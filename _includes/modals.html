@@ -25,61 +25,12 @@
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
             
-            <h2>{{ project.name }}</h2>
-            <hr class="star-primary">
-            
-            <h6>{{ project.jobs }}</h6>
-            {% if project.size != "-" %}
-            <h6>{{ project.size }}</h6>
-            {% endif %}
-            <h6>{{ project.information }}</h6>
-            <br/>
-
-            {% if project.responsibilities %}
-            <h5>Responsibilities</h5>
-            <ul class="item-details">
-              {% for responsibility in project.responsibilities %}
-              <li>{{ responsibility }}</li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-
-            {% if project.images %}
-              <div>
-                <h5>Images</h5>
-                {% for image in project.images %}
-                <img class="img-responsive img-centered" alt="{{ image.alt }}" src="assets/images/{{ image.url }}">
-                {% endfor %}
-              </div>
+            {% if project.subprojects %}
+              {% include subproject-content.html %}
             {% else %}
-            <div id="game-{{ project.id }}">
-              <h5>Game</h5>
-              <!--<iframe src="assets/games/{{ project.gameUrl }}" name="{{ project.name }}" scrolling="no" frameborder="1"></iframe>-->
-              
-            </div>
-
+              {% include project-content.html %}
             {% endif %}
 
-            <h5>Summary</h5>
-            <div>
-              {{ project.summary }}
-              <br>
-            </div>
-
-            {% if project.resourcesLink %}
-            <a target="_blank" href='{{ project.resourcesLink }}'>{{ project.resourcesText }}</a>
-            {% endif %}
-
-            {% if project.extraInfo %}
-            <p>{{ project.extraInfo }}</p>
-            {% endif %}
-
-            {% if project.codeLink %}
-            <div>
-              <h5>Code</h5>
-              <a target="_blank" href='{{ project.codeLink }}'>{{ project.codeLink }}</a>
-            </div>
-            {% endif %}
             <br>
             <br>
             <button id="button-{{project.id}}" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
