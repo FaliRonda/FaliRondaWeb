@@ -39,9 +39,12 @@
 {% endif %}
 
 {% if project.summary %}
+<br/>
 <h5>Summary</h5>
-<div>
-  {{ project.summary }}
+<div class="summary">
+  {% for line in project.summary%}
+  <p>{{ line }}</p>
+  {% endfor %}
   <br>
 </div>
 {% endif %}
@@ -60,3 +63,10 @@
   <a target="_blank" href='{{ project.codeLink }}'>{{ project.codeLink }}</a>
 </div>
 {% endif %}
+
+<style>
+  .summary p {
+    text-align: -webkit-left;
+    font-size: 15px;
+  }
+</style>

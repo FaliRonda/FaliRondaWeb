@@ -179,7 +179,6 @@ projects:
       - "QA management"
       - "Features game design"
       - "Internal products / tools design"
-         
   - name: Kira
     id: 1
     mainImage: 
@@ -202,9 +201,8 @@ projects:
     size: 'Developed by 2 people in 3 months'
     information: 'UMA Master on Design and Development of Videogames, TFM, 2018'
     summary:
-      - "At starting the project we were four prople in the team and we had a year for developing it, but as the team were not working well together we decide divide it into two projects."
-      - "We still had a three months ahead of us. At that point I decided to rethink the whole project, focusing the design in a way that would take advantage of our strengths and facilitate our artwork."
-      - "The result was this mobile game called Kira. You can download the APK with the following link,"
+      - "Kira is a mobile game we developed in three months as our TFM project. Since we had no artists, I designed this project to look like a mobile app."
+      - "You can download the APK with the following link,"
     resourcesLink: "https://drive.google.com/open?id=1egPz1bP4E0XnHLa7es8rk0ExmJJWd4Jw"
     resourcesText: "Download link"
   - name: 'Chicken-O-Saurus Royale'
@@ -223,9 +221,9 @@ projects:
       - 'Coding support'
       - 'Control of project progress'
     summary:
-      - 'This game was made between @alvarolupil, @CrisGarciaJ, @AndGarciaz and me during a Málaga Jam.'
-      - 'This time I directed the creative process of the game, made / integrate the music and audio by supporting coding.'
-      - 'I also kept an eye for ensuring that all development was fine in terms of delivery.'
+      - 'This game was made between @alvarolupil, @CrisGarciaJ, @AndGarciaz and me during a Málaga Game Jam.'
+      - 'In this project I directed the creative process of the game and created and integrated the music and audio in the code.'
+      - 'I also was in charge of ensuring we were meeting the deadlines of the jam. '
   - name: 'Cooking mecha'
     id: 3
     mainImage:
@@ -235,7 +233,7 @@ projects:
     jobs: 'Game Designer and composer'
     size: 'Developed by 4 people in 2 days'
     information: 'Ludum Dare 41, Spring 2018'
-    summary: 'Me and my regular team participated in another Ludum Dare and ended up making this game. This time I wanted to deal with the production of the audio for the game, so I composed the song that accompanies it and also worked on the sounds.'
+    summary: 'This game was developed during a Ludum Dare game jam, along with my master team. This time I wanted to deal with the audio production for the game, so I composed the song that accompanies it and also worked on the sounds.'
   - name: 'Reflections'
     id: 4
     mainImage:
@@ -251,9 +249,9 @@ projects:
       - 'Narrative and writing'
       - 'Control of project progress'
     summary:
-      - 'Together with my development team and under the theme "Transmission", we are looking to get out of our comfort zone and do something different.'
-      - 'Reflections is an intimate game that seeks to launch a message that affects all of us in many aspects of life, relating our decisions to our fears.'
-      - 'In addition to directing the creative process and the team, I designed and wrote the texts and supported the programming.'
+      - 'The jam’s theme was "Transmission", we wanted to get out of our comfort zone and do something different.'
+      - 'Reflections is an intimate game that seeks to send a message to the player, which affects all of us in many aspects of life, in relation to the decisions we take based on our fears and our emotional nature as humans..'
+      - 'In addition to directing the creative process and the team, I designed and wrote the game script and supported the programming.'
   - name: 'Bucketneers'
     id: 5
     mainImage:
@@ -270,10 +268,10 @@ projects:
       - 'Coding'
       - 'Control of project progress'
     summary:
-      - 'During the time I was studying the Master of Design and Development of Videogames, the Ludum Dare 40 took place, with the theme "The more you have, the worse".'
-      - "I built a team, which would become the same as the TFM, and I requested a space in the Polo Digital (an entity in Malaga that promotes the development of videogames) with the support of the Master's direction."
-      - 'That weekend I was directing the team in order to align them to close a project on time, directed the creative process of the design and supported the programming.'
-      - 'We finally got the 98th position in the category of teams at an international level.'
+      - 'Ludum Dare 40 took place during the time I was studying the Master of Design and Development of Videogames, with the theme "The more you have, the worse".'
+      - "I built a team, which would become my initial TFM team, and I requested a space in the Polo Digital of Málaga for the students being able to participate together in one physical place.."
+      - 'During the jam, I directed the team in order to align them to close a project on time, and also the creative process. I supported the programming as well.'
+      - 'We finally got the 98th position at an international level.'
     codeLink: 'https://github.com/RafaelRonda/Bucketneers'
     
 #  - name: 'BeDo Rhythm'
@@ -363,7 +361,7 @@ projects:
       - 'Product management'
       - 'Team lead'
     summary:
-      - 'One day I decided to start making video games to redirect my professional life, so when I got home I decided to set up a development group and start a project. I asked a colleague to think of any idea and gathered 6 colleagues to found LittleQuest.'
-      - 'I started studying on my own through books and lectures and taught my team to work through a pragmatic Scrum. The result of 3 months of work was this alpha version of the game, we met the plan.'
-      - 'After this I realized that the scope of the project was too ambitious and proposed to park it and develop smaller projects with a view to learning more iteratively.'
-      - "It's a mobile game, but here you can see a web version so you can try it, you have to press the buttons in the corners following the order that appears in the upper central box."
+      - "After a professional burnout, one day I decided to start making video games to redirect my professional life. I got home after work and I setted up a development group with 6 friends and started a studio project: LittleQuest."
+      - "I started studying through books and lectures, explaining to my team how to work through a pragmatic Scrum workflow. Three months of work later, we ended with this alpha version of Master of Tappers, meeting our planning."
+      - "Then I realized that the scope of the project was too ambitious, so I proposed to let it back and start developing smaller projects, in order to learn more iteratively."
+      - "To play you have to press the color buttons in the corners, following the order that appears in the upper central box, to defeat the enemies before the time is up!"

@@ -34,7 +34,7 @@
 
 {% if subproject.summary %}
 <h5>Summary</h5>
-<div>
+<div class="summary">
   {{ subproject.summary }}
   <br>
 </div>
@@ -54,3 +54,10 @@
   <a target="_blank" href='{{ subproject.codeLink }}'>{{ subproject.codeLink }}</a>
 </div>
 {% endif %}
+
+<style>
+  .summary p {
+    text-align: -webkit-left;
+    font-size: 15px;
+  }
+</style>
