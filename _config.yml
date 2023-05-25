@@ -166,19 +166,20 @@ projects:
     size: "-"
     information: "Developed in Virtually Live"
     responsibilities:
-      - "Product Backlog setup and maintenance"
-      - "Processes development based on Agile methodologies as Scrum or Kanban"
+      - "Product Backlog responsible"
+      - "Processes development based on Agile methodologies (Scrum, Kanban)"
       - "Project tracking and reporting"
-      - "International coordination between different studios"
-      - "Release processes handling working with mobile stores"
+      - "International coordination with a studio based in Singapore (up to 15 people)"
+      - "Release processes handling (mobile stores)"
       - "LiveOps management"
-      - "Mid-low level planning with Scrum, using Hansoft / Notion"
-      - "Mediator / communication problems solver"
-      - "Team recruitment"
+      - "Mid-low level planning using Hansoft / Notion"
+      - "High level planning using MS Project (Gantt, resources assignment…)"
+      - "Communication problems solver"
+      - "Team recruitment and management (up to +30 people)"
       - "QA management"
-      - "High level planning with Gantt techniques with MS Project"
       - "Features game design"
       - "Internal products / tools design"
+         
   - name: Kira
     id: 1
     mainImage: 
