@@ -19,6 +19,7 @@ client: The Client
 category: Web Development
 description: The description of the project
 
+
 ---
 ```
 
